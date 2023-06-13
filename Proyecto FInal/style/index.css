@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap");
+@import url("../style.css");
+
+.menu {
+  margin-top: auto;
+  padding: 30px;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.opcion,
+.opcion:visited {
+  color: var(--main);
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.opcion:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.img-home {
+  width: 200px;
+  align-self: center;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer * {
+  color: var(--main);
+}
+
+.estudiantes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.estudiantes li {
+  list-style: none;
+}
+
+#opc1:hover {
+  background-color: #018722;
+}
+
+#opc2:hover {
+  background-color: var(--altern);
+}
+
+#opc3:hover {
+  background-color: #0155bc;
+}
+
+#opc4:hover {
+  background-color: var(--secondary);
+}

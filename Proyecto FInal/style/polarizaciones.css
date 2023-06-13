@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap");
+@import url("../style.css");
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Botones */
+
+.opcion,
+#calcularCorrientes,
+#calcularResistencias,
+.back-btn {
+  padding: 20px;
+  background-color: #fff;
+  color: var(--card);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+.opcion:hover,
+#calcularCorrientes:hover,
+#calcularResistencias:hover,
+.back-btn:hover {
+  background-color: var(--card);
+  color: #fff;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+/* Data Opciones */
+
+.data {
+  margin: 10px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Opciones Calculadora */
+
+#calculadoras-data {
+  padding: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--altern);
+  border-radius: 20px;
+}
+
+#calculadoras-data h2 {
+  font-weight: 100;
+  text-align: center;
+}
+
+.opciones-calculadoras,
+#opcion-seleccionada {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Formulario Calculadora */
+
+#opcion-seleccionada {
+  flex-direction: column;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+}
+
+.form-input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.2fr;
+  grid-gap: 20px;
+}
+
+.form-input label {
+  font-size: 1.2rem;
+}
+
+.form-input input {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  box-shadow: none;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.form-input input:focus {
+  outline: none;
+  background-color: #fff;
+  color: var(--main);
+}
+
+#calcularCorrientes,
+#calcularResistencias {
+  align-self: center;
+}
+
+/* Resultados */
+
+#resultados {
+  margin: 10px;
+}
+
+#resultados p {
+  font-size: 1.3rem;
+}
+
+.back-btn {
+  text-align: center;
+}
+
+select {
+  background-color: transparent;
+  font-size: 1rem;
+  border: none;
+  outline: 1px solid #fff;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+option {
+  background: var(--main);
+}
